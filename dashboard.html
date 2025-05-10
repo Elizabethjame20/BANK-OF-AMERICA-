@@ -1,96 +1,164 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bank 0f Amecans Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bank 0f Amecans - Dashboard</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #f7f7f7;
+      background: #f4f4f4;
       margin: 0;
       padding: 0;
     }
     .header {
-      background: #d62828;
-      color: white;
+      background: #00274d;
+      color: #fff;
       padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .header h1 {
+      font-size: 20px;
+      margin: 0;
+    }
+    .header .icon {
+      width: 30px;
+      height: 30px;
+    }
+    .welcome {
+      background: #eee;
+      padding: 20px;
+      font-size: 20px;
       text-align: center;
     }
-    .container {
+    .balance-card {
+      background: #fff;
+      margin: 20px;
       padding: 20px;
-    }
-    .account-summary {
-      background: white;
       border-radius: 10px;
-      padding: 20px;
+      text-align: center;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      margin-bottom: 30px;
+    }
+    .balance-card h2 {
+      color: #333;
+    }
+    .balance {
+      font-size: 28px;
+      color: #005ea2;
+      margin: 10px 0;
+    }
+    .account-number {
+      color: #777;
+      font-weight: bold;
+    }
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin: 10px 20px;
+    }
+    .buttons button {
+      flex: 1 1 40%;
+      max-width: 150px;
+      padding: 12px;
+      background: #003366;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
     }
     .transactions {
-      background: white;
-      border-radius: 10px;
+      background: #fff;
+      margin: 20px;
       padding: 20px;
+      border-radius: 10px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
-    table {
+    .transactions h3 {
+      margin-top: 0;
+    }
+    .transactions table {
       width: 100%;
       border-collapse: collapse;
     }
-    th, td {
-      text-align: left;
+    .transactions th,
+    .transactions td {
       padding: 10px;
+      text-align: left;
       border-bottom: 1px solid #ddd;
     }
-    th {
-      background: #eee;
+    .transactions th {
+      background: #f0f0f0;
+    }
+    .footer {
+      background: #00274d;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      font-size: 14px;
     }
   </style>
 </head>
 <body>
+
   <div class="header">
     <h1>Bank 0f Amecans</h1>
-    <p>Welcome back, John Doe</p>
+    <img class="icon" src="https://img.icons8.com/ios-filled/50/ffffff/bell.png" alt="Notifications">
   </div>
 
-  <div class="container">
-    <div class="account-summary">
-      <h2>Account Summary</h2>
-      <p><strong>Account Number:</strong> 1234567890</p>
-      <p><strong>Available Balance:</strong> ₦2,150,000.00</p>
-    </div>
+  <div class="welcome">Good evening, John Doe</div>
 
-    <div class="transactions">
-      <h2>Recent Transactions</h2>
-      <table>
-        <tr>
-          <th>Date</th>
-          <th>Description</th>
-          <th>Amount</th>
-        </tr>
-        <tr>
-          <td>2024-05-09</td>
-          <td>Transfer to Savings</td>
-          <td>-₦150,000.00</td>
-        </tr>
-        <tr>
-          <td>2024-05-07</td>
-          <td>Salary Credit</td>
-          <td>+₦500,000.00</td>
-        </tr>
-        <tr>
-          <td>2024-05-05</td>
-          <td>POS Purchase</td>
-          <td>-₦35,000.00</td>
-        </tr>
-        <tr>
-          <td>2024-05-03</td>
-          <td>Transfer from John M.</td>
-          <td>+₦100,000.00</td>
-        </tr>
-      </table>
-    </div>
+  <div class="balance-card">
+    <h2>Available Balance</h2>
+    <div class="balance">$2,000,000.00</div>
+    <div class="account-number">Account No: 8765432198</div>
   </div>
+
+  <div class="buttons">
+    <button>Accounts</button>
+    <button>Cards</button>
+    <button>Transfers</button>
+    <button>Bills</button>
+  </div>
+
+  <div class="transactions">
+    <h3>Recent Transactions</h3>
+    <table>
+      <tr>
+        <th>Date</th>
+        <th>Description</th>
+        <th>Amount</th>
+      </tr>
+      <tr>
+        <td>2025-05-10</td>
+        <td>POS Purchase</td>
+        <td>-$45.99</td>
+      </tr>
+      <tr>
+        <td>2025-05-08</td>
+        <td>Salary Credit</td>
+        <td>+$3,500.00</td>
+      </tr>
+      <tr>
+        <td>2025-05-05</td>
+        <td>Transfer to Savings</td>
+        <td>-$1,000.00</td>
+      </tr>
+      <tr>
+        <td>2025-05-01</td>
+        <td>Transfer from Michael</td>
+        <td>+$250.00</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="footer">
+    © 2025 Bank 0f Amecans. All rights reserved.
+  </div>
+
 </body>
 </html>
