@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+body {
+  background: #f9f9f9;
+  color: #333;
+}
+.app-header {
+  background: #004481;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+.logo {
+  width: 50px;
+  margin-bottom: 10px;
+}
+.dashboard {
+  padding: 20px;
+}
+.account-overview {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  margin-bottom: 20px;
+  text-align: center;
+}
+.balance {
+  font-size: 24px;
+  font-weight: bold;
+  color: #004481;
+  margin: 10px 0;
+}
+.account-number {
+  color: #777;
+}
+.features {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.feature-box {
+  background: #004481;
+  color: white;
+  flex: 1;
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+.transactions {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+.transactions ul {
+  list-style: none;
+}
+.transactions li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background: #004481;
+  padding: 10px 0;
+}
+.bottom-nav button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 14px;
+}
