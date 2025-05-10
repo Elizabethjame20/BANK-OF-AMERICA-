@@ -1,63 +1,47 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bank 0f Amecans Login</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f1f1f1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-    }
-    .login-container {
-      background: white;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      text-align: center;
-      max-width: 300px;
-    }
-    input[type="password"] {
-      width: 100%;
-      padding: 10px;
-      margin: 15px 0;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-    }
-    button {
-      background: #d62828;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    h1 { color: #333; }
-  </style>
+  <title>Bank 0f Amecans - Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="login-container">
-    <h1>Bank 0f Amecans</h1>
-    <p>Secure Account Login</p>
-    <input type="password" id="password" placeholder="Enter password" />
-    <button onclick="login()">Login</button>
-    <p id="error" style="color: red;"></p>
-  </div>
+  <header class="app-header">
+    <img src="logo.png" alt="Bank 0f Amecans" class="logo" />
+    <h1>Welcome, John Doe</h1>
+  </header>
 
-  <script>
-    function login() {
-      const input = document.getElementById("password").value;
-      if (input === "Willian456") {
-        window.location.href = "dashboard.html";
-      } else {
-        document.getElementById("error").innerText = "Incorrect password.";
-      }
-    }
-  </script>
+  <main class="dashboard">
+    <section class="account-overview">
+      <h2>Available Balance</h2>
+      <p class="balance">₦2,150,000.00</p>
+      <p class="account-number">Acct No: 1234567890</p>
+    </section>
+
+    <section class="features">
+      <div class="feature-box">Accounts</div>
+      <div class="feature-box">Cards</div>
+      <div class="feature-box">Transfers</div>
+      <div class="feature-box">Bills</div>
+    </section>
+
+    <section class="transactions">
+      <h2>Recent Transactions</h2>
+      <ul>
+        <li><span>POS Purchase</span><span>-₦35,000</span></li>
+        <li><span>Salary Credit</span><span>+₦500,000</span></li>
+        <li><span>Transfer to Savings</span><span>-₦150,000</span></li>
+        <li><span>Transfer from John M.</span><span>+₦100,000</span></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="bottom-nav">
+    <button>Home</button>
+    <button>Transfer</button>
+    <button>Cards</button>
+    <button>More</button>
+  </footer>
 </body>
 </html>
