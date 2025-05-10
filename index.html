@@ -1,47 +1,135 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Bank 0f Amecans - Dashboard</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+      color: #333;
+    }header {
+  background-color: #003366;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.welcome {
+  font-size: 1.5em;
+  margin-top: 5px;
+}
+
+.container {
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.balance {
+  font-size: 2em;
+  color: #0066cc;
+  margin: 10px 0;
+}
+
+.section-title {
+  font-weight: bold;
+  margin-top: 30px;
+  font-size: 1.2em;
+}
+
+.account-info {
+  margin-top: 5px;
+  color: #777;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.action-btn {
+  flex: 1 1 45%;
+  padding: 12px;
+  background-color: #004080;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+table {
+  width: 100%;
+  margin-top: 15px;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background: #f0f0f0;
+}
+
+footer {
+  background: #003366;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+  </style>
 </head>
-<body>
-  <header class="app-header">
-    <img src="logo.png" alt="Bank 0f Amecans" class="logo" />
-    <h1>Welcome, John Doe</h1>
-  </header>
-
-  <main class="dashboard">
-    <section class="account-overview">
-      <h2>Available Balance</h2>
-      <p class="balance">₦2,150,000.00</p>
-      <p class="account-number">Acct No: 1234567890</p>
-    </section>
-
-    <section class="features">
-      <div class="feature-box">Accounts</div>
-      <div class="feature-box">Cards</div>
-      <div class="feature-box">Transfers</div>
-      <div class="feature-box">Bills</div>
-    </section>
-
-    <section class="transactions">
-      <h2>Recent Transactions</h2>
-      <ul>
-        <li><span>POS Purchase</span><span>-₦35,000</span></li>
-        <li><span>Salary Credit</span><span>+₦500,000</span></li>
-        <li><span>Transfer to Savings</span><span>-₦150,000</span></li>
-        <li><span>Transfer from John M.</span><span>+₦100,000</span></li>
-      </ul>
-    </section>
-  </main>
-
-  <footer class="bottom-nav">
-    <button>Home</button>
-    <button>Transfer</button>
-    <button>Cards</button>
-    <button>More</button>
-  </footer>
-</body>
+<body><header>
+  <span>Bank 0f Amecans</span>
+  <div class="welcome">Welcome back, John Doe</div>
+</header><div class="container">
+  <div class="section-title">Available Balance</div>
+  <div class="balance">$12,780.45</div>
+  <div class="account-info">Account No: <strong>8765432198</strong></div>  <div class="actions">
+    <a href="#" class="action-btn">Accounts</a>
+    <a href="#" class="action-btn">Cards</a>
+    <a href="#" class="action-btn">Transfers</a>
+    <a href="#" class="action-btn">Bills</a>
+  </div>  <div class="section-title">Recent Transactions</div>
+  <table>
+    <tr>
+      <th>Date</th>
+      <th>Description</th>
+      <th>Amount</th>
+    </tr>
+    <tr>
+      <td>2025-05-10</td>
+      <td>POS Purchase</td>
+      <td>-$45.99</td>
+    </tr>
+    <tr>
+      <td>2025-05-08</td>
+      <td>Salary Credit</td>
+      <td>+$3,500.00</td>
+    </tr>
+    <tr>
+      <td>2025-05-05</td>
+      <td>Transfer to Savings</td>
+      <td>-$1,000.00</td>
+    </tr>
+    <tr>
+      <td>2025-05-01</td>
+      <td>Transfer from Michael</td>
+      <td>+$250.00</td>
+    </tr>
+  </table>
+</div><footer>
+  © 2025 Bank 0f Amecans. All rights reserved.
+</footer></body>
 </html>
