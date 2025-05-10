@@ -1,96 +1,104 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bank 0f Amecans Login</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bank 0f Amecans - Login</title>
   <style>
     body {
+      margin: 0;
+      background: #f3f4f7;
       font-family: Arial, sans-serif;
-      background: #f0f2f5;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
-      margin: 0;
     }
     .login-box {
-      background: white;
+      background: #ffffff;
       padding: 30px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
       border-radius: 8px;
-      width: 100%;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+      width: 90%;
       max-width: 400px;
+    }
+    .logo {
+      font-weight: bold;
+      color: #d00000;
+      font-size: 20px;
+      text-align: center;
+      margin-bottom: 15px;
     }
     h2 {
       text-align: center;
-      margin-bottom: 20px;
-      color: #002868;
+      font-size: 18px;
+      color: #003366;
+      margin-bottom: 10px;
     }
-    label {
-      display: block;
-      margin: 10px 0 5px;
-      font-weight: bold;
-    }
-    input[type="text"], input[type="password"] {
+    input[type="text"],
+    input[type="password"] {
       width: 100%;
-      padding: 10px;
+      padding: 12px;
+      margin: 10px 0;
       border: 1px solid #ccc;
       border-radius: 4px;
-      box-sizing: border-box;
     }
-    .options {
-      margin-top: 10px;
-      display: flex;
-      align-items: center;
-    }
-    .options input {
-      margin-right: 5px;
-    }
-    .login-btn {
+    button {
       width: 100%;
-      padding: 10px;
-      background-color: #d00000;
-      color: white;
+      padding: 12px;
+      background: #d00000;
       border: none;
-      border-radius: 4px;
-      margin-top: 20px;
-      cursor: pointer;
+      color: white;
       font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
     }
     .error {
       color: red;
-      font-size: 14px;
-      margin-top: 10px;
+      text-align: center;
       display: none;
+      margin-bottom: 10px;
+    }
+    .extra-links {
+      margin-top: 12px;
+      text-align: center;
+      font-size: 14px;
+    }
+    .extra-links a {
+      color: #004080;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
+
   <div class="login-box">
-    <h2>Bank 0f Amecans</h2>
-    <label for="onlineId">Online ID</label>
-    <input type="text" id="onlineId" placeholder="Enter your Online ID"><label for="passcode">Passcode</label>
-<input type="password" id="passcode" placeholder="Enter your Passcode">
+    <div class="logo">Bank 0f Amecans</div>
+    <h2>Secure Sign-In</h2>
+    <div class="error" id="error">Invalid Online ID or Passcode</div>
 
-<div class="options">
-  <input type="checkbox" id="remember">
-  <label for="remember">Save this Online ID</label>
-</div>
+    <input type="text" id="onlineId" placeholder="Enter Online ID" />
+    <input type="password" id="passcode" placeholder="Enter Passcode" />
+    <button onclick="login()">Sign In</button>
 
-<button class="login-btn" onclick="login()">Sign In</button>
-<div class="error" id="error">Invalid ID or Passcode</div>
+    <div class="extra-links">
+      <a href="#">Forgot Passcode?</a><br/>
+      <a href="#">Enroll</a>
+    </div>
+  </div>
 
-  </div>  <script>
+  <script>
     function login() {
-      const id = document.getElementById('onlineId').value;
-      const pass = document.getElementById('passcode').value;
-      const errorBox = document.getElementById('error');
+      const onlineId = document.getElementById("onlineId").value.trim();
+      const passcode = document.getElementById("passcode").value;
 
-      if (id === 'jd_user843' && pass === 'Willian456') {
-        window.location.href = 'dashboard.html';
+      if (onlineId === "demoUser" && passcode === "Willian456") {
+        window.location.href = "dashboard.html";
       } else {
-        errorBox.style.display = 'block';
+        document.getElementById("error").style.display = "block";
       }
     }
-  </script></body>
+  </script>
+
+</body>
 </html>
