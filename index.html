@@ -12,13 +12,40 @@
     }header {
   background-color: #003366;
   color: #fff;
-  padding: 20px;
-  text-align: center;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.notification {
+  font-size: 20px;
+  margin-left: 10px;
+  cursor: pointer;
 }
 
 .welcome {
+  text-align: center;
   font-size: 1.5em;
-  margin-top: 5px;
+  margin: 10px auto;
 }
 
 .container {
@@ -33,6 +60,7 @@
   font-size: 2em;
   color: #0066cc;
   margin: 10px 0;
+  text-align: center;
 }
 
 .section-title {
@@ -44,6 +72,7 @@
 .account-info {
   margin-top: 5px;
   color: #777;
+  text-align: center;
 }
 
 .actions {
@@ -91,11 +120,14 @@ footer {
   </style>
 </head>
 <body><header>
-  <span>Bank 0f Amecans</span>
-  <div class="welcome">Welcome back, John Doe</div>
-</header><div class="container">
+  <div class="brand">Bank 0f Amecans</div>
+  <div class="profile">
+    <img src="https://i.imgur.com/0y0y0y0.png" alt="User Avatar">
+    <span class="notification">🔔</span>
+  </div>
+</header><div class="welcome">Good evening, John Doe</div><div class="container">
   <div class="section-title">Available Balance</div>
-  <div class="balance">$12,780.45</div>
+  <div class="balance">$2,000,000.00</div>
   <div class="account-info">Account No: <strong>8765432198</strong></div>  <div class="actions">
     <a href="#" class="action-btn">Accounts</a>
     <a href="#" class="action-btn">Cards</a>
